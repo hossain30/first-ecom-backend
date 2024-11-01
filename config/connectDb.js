@@ -2,10 +2,12 @@ const mongoose = require("mongoose");
 
 const connectDb = async () => {
   try {
-    mongoose.connect("mongodb://localhost:27017/dcommerce");
-    console.log("db connected successfully");
+    mongoose.connect(
+      "mongodb+srv://badsha:badsha@cluster0.fb2hw.mongodb.net/Acommerce?retryWrites=true&w=majority"
+    );
+
   } catch (error) {
-    console.log(error);
+
   }
 };
 
